@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../../Downloads/mi-logo-zip-file"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "personal-website"
+  }
+}
