@@ -1,9 +1,21 @@
+:root {
+  --gradient: 
+  linear-gradient(
+    -45deg,
+    #03045E,
+    #023E8A,
+    #0077B6,
+    #0096C7,
+    #00B4D8
+  )
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
-body {
+html {
   font-family: "PT Sans", sans-serif;
 }
 
@@ -25,19 +37,53 @@ main {
 .front-page nav div {
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 80px;
   justify-content: center;
+  align-items: center;
   height: 100vh;
-  margin-right: 20px;
+  padding: 0 10px;
+  background-color: #023E8A;
+}
+
+nav div a {
+  text-decoration: none;
+  color: white;
+  transform: rotate(90deg);
+}
+
+nav div a::after {
+  content: '';
+  margin: 0 auto;
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: white;
+  transition: 300ms;
+}
+
+nav div a:hover::after {
+  width: 100%;
 }
 
 .intro-text span {
   display: block;
+  color: white;
+}
+.intro-text span:nth-child(1) {
+  font-size: 1.1rem;
+}
+.intro-text span:nth-child(2) {
+  font-size: 1.1rem;
 }
 .intro-text span:nth-child(3) {
   font-weight: bold;
-  font-size: 50pt;
+  font-size: 4rem;
 }
+.intro-text span:nth-child(4) {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
 .home {
   order: -1;
   display: flex;
@@ -45,24 +91,33 @@ main {
   justify-content: space-between;
   height: 100%;
   padding: 30px;
-
-  background: linear-gradient(-45deg, rgb(194, 178, 180), rgb(107, 78, 113), rgb(58, 68, 84), rgb(83, 104, 126));
-  background-size: 400% 400%;
-  animation: gradient-change 5s ease infinite;
+  background: var(--gradient);
+  background-size: 400%;
+  animation: gradient-animation 25s ease infinite;
   }
 .home img {
   width: 60px;
   display: block;
 }
+.icons {
+  color: white;
+  text-align: center;
+}
+#github, #mail, #linkedin {
+  transition: color 350ms;
+}
+#github:hover, #mail:hover, #linkedin:hover {
+  color: black;
+}
 
-@keyframes gradient-change {
+@keyframes gradient-animation {
 	0% {
-		background-position: 0% 50%;
+		background-position: left;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: right;
 	}
 	100% {
-		background-position: 0% 50%;
+		background-position: left;
 	}
 }
