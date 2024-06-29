@@ -2,3 +2,67 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+main {
+  width: 80vw;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Front Page Styles */
+
+.front-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.front-page nav div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: center;
+  height: 100vh;
+  margin-right: 20px;
+}
+
+.intro-text span {
+  display: block;
+}
+.intro-text span:nth-child(3) {
+  font-weight: bold;
+  font-size: 50pt;
+}
+.home {
+  order: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 30px;
+
+  background: linear-gradient(-45deg, rgb(194, 178, 180), rgb(107, 78, 113), rgb(58, 68, 84), rgb(83, 104, 126));
+  background-size: 400% 400%;
+  animation: gradient-change 5s ease infinite;
+  }
+.home img {
+  width: 60px;
+  display: block;
+}
+
+@keyframes gradient-change {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
