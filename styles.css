@@ -96,7 +96,8 @@ nav div a:hover::after {
   width: 100%;
 }
 nav img {
-  width: 160px;
+  width: 70px;
+  margin: 10px 0px;
   display: block;
 }
 
