@@ -13,8 +13,7 @@ This repository contains the code for my personal website. It includes informati
 
 ## Features
 - **About Me:** A brief introduction to who I am and my background.
-- **Portfolio:** Highlights of my projects with descriptions and links.
-- **Blog:** Articles on various topics related to my interests.
+- **Projects:** Various projects that I have completed or am currently working on.
 - **Contact:** Ways to get in touch with me.
 
 ## Technologies Used
