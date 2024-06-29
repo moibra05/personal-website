@@ -17,6 +17,6 @@ This repository contains the code for my personal website. It includes informati
 - **Contact:** Ways to get in touch with me.
 
 ## Technologies Used
-- HTML5, CSS3
+- HTML5, CSS
 - Font Awesome V4 (https://fontawesome.com/) for icons
 - Google Fonts (https://fonts.google.com/) for external fonts
