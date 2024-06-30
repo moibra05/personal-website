@@ -174,6 +174,18 @@ section {
   padding: 250px 30px;
 }
 
+/* About Me */
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.about-me img {
+  width: 400px;
+}
+
 /* Contact Section */
 
 .contact h2 {
