@@ -149,9 +149,8 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: justify;
-  margin: 20px 0px;
   padding: 250px 30px;
 }
 
@@ -173,7 +172,6 @@ section {
 /* Projects */
 
 .projects {
-  opacity: 0;
   transition: 1500ms;
 }
 
@@ -182,6 +180,8 @@ section {
   align-items: center;
   gap: 20px;
   margin: 40px 0px;
+  opacity: 0;
+  transition: 1000ms;
 }
 
 .project img {
@@ -218,8 +218,12 @@ section {
   text-align: right;
 }
 
+.project:nth-child(odd){
+  transform: translateX(300px);
+}
 .project:nth-child(even){
   flex-direction: row-reverse;
+  transform: translateX(-300px);
 }
 
 .project:nth-child(even) .project-tools {
@@ -307,4 +311,5 @@ footer {
 
 .show {
   opacity: 1;
+  transform: translateX(0) !important;
 }
