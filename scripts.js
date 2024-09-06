@@ -1,22 +1,19 @@
 const footer = document.querySelector("footer");
-const body = document.querySelector("body");
-const mouse = document.createElement("div");
-body.appendChild(mouse);
-let round = 0;
 
 footer.textContent = `© ${new Date().getFullYear()} Mohamed Ibrahim`
 
+const aboutMe = document.querySelector(".about-me");
+const projects = document.querySelector(".projects");
+const contact = document.querySelector(".contact");
 
-setInterval(() => {
-    if(round === 1){
-        body.style.backgroundColor = "yellow";
-        round = 0;
-    }
-    else {
-        body.style.backgroundColor = "yellow";
-        round = 1;
-    }
-},);
+const pageSections = [aboutMe, projects, contact];
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        entry.target.classList.toggle("show", entry.isIntersecting);
+    });
+})
 
-setInterval()
+pageSections.forEach(section => {
+    observer.observe(section);
+})
