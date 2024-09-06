@@ -186,6 +186,14 @@ section {
 
 .project img {
   width: 50%;
+  transition: 250ms;
+  border-radius: 5px;
+  border: 3px var(--tertiaryColour) solid;
+}
+
+.project img:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .project-description {
