@@ -185,7 +185,8 @@ section {
 }
 
 .project img {
-  width: 50%;
+  width: 100%;
+  max-width: 800px;
   transition: 250ms;
   border-radius: 5px;
   border: 3px var(--tertiaryColour) solid;
