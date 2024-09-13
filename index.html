@@ -22,12 +22,16 @@
   <body>
     <nav>
       <img src="images/logo-no-background.png" alt="logo" />
-      <div>
-        <a href="#home" id="home-nav">HOME</a>
-        <a href="#about-me" id="about-me-nav">ABOUT ME</a>
-        <a href="#projects" id="projects-nav">PROJECTS</a>
-        <a href="#contact" id="contact-nav">CONTACT</a>
-      </div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox-toggle" />
+        <label for="checkbox-toggle" class="hamburger">&#9776;</label>
+        <div class="nav-sections">
+          <li><a href="#home" id="home-nav">HOME</a></li>
+          <li><a href="#about-me" id="about-me-nav">ABOUT ME</a></li>
+          <li><a href="#projects" id="projects-nav">PROJECTS</a></li>
+          <li><a href="#contact" id="contact-nav">CONTACT</a></li>
+        </div>
+      </ul>
     </nav>
     <div class="front-page" id="home">
       <div class="intro-text">
@@ -97,6 +101,16 @@
       </section>
       <section class="projects" id="projects">
         <h2>Projects</h2>
+        <div class="summary-of-technologies">
+          <!-- <h3>Summary of Technologies</h3>
+          <ul>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+          </ul> -->
+        </div>
         <div class="all-projects">
           <div class="project" id="portfolio">
             <a href="#home" class="project-link"

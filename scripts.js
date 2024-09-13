@@ -1,6 +1,9 @@
 const footer = document.querySelector("footer");
 
+// Updates copyright year
 footer.textContent = `© ${new Date().getFullYear()} Mohamed Ibrahim`
+
+
 
 const aboutMe = document.querySelector(".about-me");
 const projectSection = document.querySelector(".projects");
