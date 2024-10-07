@@ -261,6 +261,13 @@ section {
   padding: 20px 0px
 }
 
+.project-tools li {
+  background-color: var(--tertiaryColour);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+
 .project:nth-child(odd) h3{
   text-align: right;
 }
